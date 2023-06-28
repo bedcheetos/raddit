@@ -1,0 +1,68 @@
+.submission__photo{
+    max-width: 70%;
+    max-height: 480px;
+    align-self: center;
+    margin: 2% auto;
+}
+
+[dir] .site-content__body{
+    display: flex;
+    flex-direction: column;
+    background: var(--card-bg);
+    border: 1px solid var(--border-light);
+    border-radius: 5px;
+    box-shadow: none;
+    padding: 1rem;  
+}
+
+[dir] .sidebar__section {
+    background: var(--sidebar-card-bg,var(--card-bg));
+    box-shadow: none;
+    background: var(--card-bg);
+    border: 1px solid var(--border-light);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+[dir] .button{
+    border-radius: 5px;
+}
+
+[dir] .tab{
+    margin: .1rem;
+    border-radius: 5px;
+}
+
+.submission{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 1% 0 1% 0 ;
+    border: 1px solid var(--border-light);
+    background-color: var(--bg-content);
+    border-radius: 10px;
+}
+
+.submission__link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.submission__link-title{
+    padding-top: 1%;
+}
+
+/* has to be that specific because of css's nature */
+article.submission  .submission__row  .submission__inner{
+    padding-left: 1%;
+}
+
+[dir] .comment__row{
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    border-bottom-width: 0 1px;
+}
+
+[dir] .comment{
+    border-bottom: none;
+}
