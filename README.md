@@ -21,3 +21,6 @@ Specifically, the extension uses the host permission on raddle.me to inject a CS
 ## Performance
 Since the extension uses the direct sources of the images, it is much less performant than raddle as is. 
 Even though the images lazy load and only when in view, they can lag a little.
+
+## Download
+you can download the extension (only for firefox) [here](https://addons.mozilla.org/en-US/firefox/addon/raddit/)
