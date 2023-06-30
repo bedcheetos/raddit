@@ -3,11 +3,13 @@ var ractive = true
 
 //this function handles the outgoing communication of this background script to the content script
 function messageContentScript(message){
-    browser.tabs.query({active: true, currentWindow: true}) //getting the right tab so the right content script is adressed
-        .then((tab) => {
-            browser.tabs.sendMessage(tab[0].id, {
-                command: message
-            })
+    browser.tabs.query({url: '*://raddle.me/*'}) //geting the right tabs so the right content script is adressed
+        .then((tabs) => {
+            tabs.forEach(tab => {
+                browser.tabs.sendMessage(tab.id, {
+                    command: message
+                })
+            });
         })
         .catch((error) => console.error(error))
 }

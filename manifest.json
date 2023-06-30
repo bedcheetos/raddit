@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "raddit",
-    "version": "0.3",
+    "version": "0.3.1",
 
     "description": "This Add-on has the goal to present the page \"raddle.me\" in a style that is similar to reddit.",
     "icons": {
